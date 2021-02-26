@@ -126,8 +126,8 @@ Puedes observar que Git todavía no sabe qué hacer con el archivo que
 acabas de crear:
 
     $ git status
-	On branch master
-	Your branch is up-to-date with 'origin/master'.
+	On branch main
+	Your branch is up-to-date with 'origin/main'.
 	Untracked files:
 	  (use "git add <file>..." to include in what will be committed)
 
@@ -195,7 +195,7 @@ instrucciones relevantes cuando haya nuevas prácticas, tareas o
 proyectos, te recomiendo indicarle que estarás siguiendo una *rama
 remota*. Por ejemplo, podrías llamarla de forma que me describa, `prof`:
 
-    $ git remote add --track master prof git://github.com/unamfi/sistop-2021-2
+    $ git remote add --track main prof git://github.com/unamfi/sistop-2021-2
 
 Esto significa, *agrega una fuente remota en la dirección mencionada,
 siguiendo la rama maestra, y dale localmente el nombre `prof`*. Puedes
@@ -205,7 +205,7 @@ identificador que quedará en tu computadora.
 Haz la prueba: un par de días después de haber entregado esta
 práctica, entra al directorio de tu repositorio e indícale:
 
-    $ git pull prof master
+    $ git pull prof main
 
 Esta instrucción significa, *trae la rama principal del repositorio
 remoto `prof`*. Cuando vuelvas a comenzar a trabajar con tu

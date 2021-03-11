@@ -1,0 +1,5 @@
+
+Model: Intel i5-10400F
+Base Clock Speed: 2.90 GHz
+No. Of Cores: 6
+No. Of Threads: 12

@@ -36,11 +36,13 @@ de dos personas*.
 Podría pedirles que elijan un fascículo al azar, pero estoy seguro que
 la distribución distaría mucho de ser homogénea ☺ Por tanto:
 
+<blockquote>
 *m = m<sub>1</sub> + m<sub>2</sub>*
 
-*f = rand(24) | m > 24*
+*f = &lfloor; (m % 100) / 4 &rfloor;*
 
-*f = &lfloor; (m % 100) / 4 &rfloor; | m ≤ 24*
+*f = rand(24) | f > 24*
+</blockquote>
 
 Esto es:
 

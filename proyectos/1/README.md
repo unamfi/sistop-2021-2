@@ -39,9 +39,9 @@ la distribución distaría mucho de ser homogénea ☺ Por tanto:
 <blockquote>
   <em>m = m<sub>1</sub> + m<sub>2</sub></em>
 
-  <em>*f = &lfloor; (m % 100) / 4 &rfloor;</em>
+  <em>f = &lfloor; (m % 100) / 4 &rfloor;</em>
 
-  <em>f = rand(24) | f > 24</em>
+  <em>f = rand(24) | f == 0</em>
 </blockquote>
 
 Esto es:
@@ -50,14 +50,14 @@ Esto es:
   ambos participantes del equipo. En caso de que hayas quedado sin
   pareja, asume que *m<sub>2</sub> = 00000000*.
 
-- Si los últimos dos números de la suma son 97, 98, 99 o 00 (esto es,
-  te tocaría trabajar el fascículo 25, que no existe), elige un
-  fascículo al azar.
+- Toma los dos últimos números del *m* resultante (*m módulo 100*).
 
-- Si la suma *no* termina en 97, 98, 99 o 00:
-  - toma sus dos últimos números (*m módulo 100*).
-  - Divídelos sobre 4 (con aritmética entera, descartando partes
-    fraccionales)
+- Divídelos sobre 4 (con aritmética entera, descartando partes
+  fraccionales)
+
+- Si los últimos dos números de la suma son 00, 01, 02, 03 (esto es,
+  te tocaría trabajar el fascículo 0, que no existe), elige un
+  fascículo al azar.
 
 Por favor, indica en la entrega el número de matrícula de ambos.
 

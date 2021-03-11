@@ -37,11 +37,11 @@ Podría pedirles que elijan un fascículo al azar, pero estoy seguro que
 la distribución distaría mucho de ser homogénea ☺ Por tanto:
 
 <blockquote>
-*m = m<sub>1</sub> + m<sub>2</sub>*
+  <em>m = m<sub>1</sub> + m<sub>2</sub></em>
 
-*f = &lfloor; (m % 100) / 4 &rfloor;*
+  <em>*f = &lfloor; (m % 100) / 4 &rfloor;</em>
 
-*f = rand(24) | f > 24*
+  <em>f = rand(24) | f > 24</em>
 </blockquote>
 
 Esto es:

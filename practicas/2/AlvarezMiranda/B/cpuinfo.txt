@@ -1,0 +1,16 @@
+ Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: MacBookAir7,2
+      Processor Name: Dual-Core Intel Core i7
+      Processor Speed: 2.2 GHz
+      Number of Processors: 1
+      Total Number of Cores: 2
+      L2 Cache (per Core): 256 KB
+      L3 Cache: 4 MB
+      Hyper-Threading Technology: Enabled
+      Memory: 8 GB
+      Boot ROM Version: 195.0.0.0.0
+      SMC Version (system): 2.27f2
+      Serial Number (system): C1MRH52VG943
+      Hardware UUID: 4C44804A-B454-585C-8C3B-4332A2C1506D

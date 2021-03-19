@@ -2,9 +2,9 @@
 #+author: Gunnar Wolf
 
 * Calendario de exposiciones
-  La evaluación de las exposiciones sigue los criterios descritos en las
-  [[http://gwolf.sistop.org/rubricas.pdf][rúbricas del curso]], particularmente el apartado 2 (Exposición frente
-  al grupo).
+  La evaluación de las exposiciones sigue los criterios descritos en
+  la última sección de este archivo (/Criterios de evaluación grupal/
+  y /por el docente/).
 
   Los temas sugeridos para exposición están disponibles [[http://gwolf.sistop.org/][en la página Web
   del curso]]. Les reitero, sin embargo, que resulta más enriquecedor (y

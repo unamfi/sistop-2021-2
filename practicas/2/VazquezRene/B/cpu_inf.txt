@@ -1,0 +1,41 @@
+Nombre del SO	Microsoft Windows 10 Home
+Versión	10.0.18362 compilación 18362
+Descripción adicional del SO 	No disponible
+Fabricante del SO	Microsoft Corporation
+Nombre del sistema	RENE
+Fabricante del sistema	Acer
+Modelo del sistema	Aspire V5-123
+Tipo de sistema	PC basado en x64
+SKU del sistema	Aspire V5-123_0834_2_05
+Procesador	AMD E1-2100 APU with Radeon(TM) HD Graphics, 1000 Mhz, 2 procesadores principales, 2 procesadores lógicos
+Versión y fecha de BIOS	Insyde Corp. V2.05, 23/10/2013
+Versión de SMBIOS	2.7
+Versión de controladora integrada	0.00
+Modo de BIOS	UEFI
+Fabricante de la placa base	Acer
+Producto de placa base	ZA10_KB
+Versión de la placa base	Type2 - A01 Board Version
+Rol de plataforma	Móvil
+Estado de arranque seguro	Activada
+Configuración de PCR7	Enlace no posible
+Directorio de Windows	C:\WINDOWS
+Directorio del sistema	C:\WINDOWS\system32
+Dispositivo de arranque	\Device\HarddiskVolume2
+Configuración regional	México
+Capa de abstracción de hardware	Versión = "10.0.18362.752"
+Nombre de usuario	Rene\rene
+Zona horaria	Hora estándar central (México)
+Memoria física instalada (RAM)	2.00 GB
+Memoria física total	1.45 GB
+Memoria física disponible	194 MB
+Memoria virtual total	4.32 GB
+Memoria virtual disponible	1.65 GB
+Espacio de archivo de paginación	2.88 GB
+Archivo de paginación	C:\pagefile.sys
+Protección de DMA de kernel	Desactivada
+Seguridad basada en la virtualización	No habilitado
+Compatibilidad con cifrado de dispositivo	Razones del error de cifrado automático del dispositivo: No se puede usar TPM, No se admite el enlace PCR7, Error en la interfaz de prueba de seguridad de hardware. El dispositivo no está en modo de espera moderno., Se detectó un bus o un dispositivo compatible con DMA que no se permite., Deshabilitado por directiva, No se puede usar TPM
+Hyper-V - Extensiones de modo de monitor VM	Sí
+Hyper-V - Extensiones de traducción de dirección de segundo nivel	Sí
+Hyper-V - Virtualización habilitada en Firmware	No
+Hyper-V -Protección de ejecución de datos	Sí

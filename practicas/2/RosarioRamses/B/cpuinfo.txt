@@ -1,0 +1,53 @@
+
+Nombre de host:                            DESKTOP-LQ1NH2S
+Nombre del sistema operativo:              Microsoft Windows 10 Pro
+Versi¢n del sistema operativo:             10.0.19042 N/D Compilaci¢n 19042
+Fabricante del sistema operativo:          Microsoft Corporation
+Configuraci¢n del sistema operativo:       Estaci¢n de trabajo independiente
+Tipo de compilaci¢n del sistema operativo: Multiprocessor Free
+Propiedad de:                              Zero
+Organizaci¢n registrada:                   N/D
+Id. del producto:                          00330-80000-00000-AA410
+Fecha de instalaci¢n original:             31/01/2021, 08:07:27 p. m.
+Tiempo de arranque del sistema:            09/03/2021, 03:18:34 p. m.
+Fabricante del sistema:                    Micro-Star International Co., Ltd.
+Modelo el sistema:                         MS-7C52
+Tipo de sistema:                           x64-based PC
+Procesador(es):                            1 Procesadores instalados.
+                                           [01]: AMD64 Family 23 Model 17 Stepping 0 AuthenticAMD ~3500 Mhz
+Versi¢n del BIOS:                          American Megatrends Inc. 2.80, 07/12/2020
+Directorio de Windows:                     C:\WINDOWS
+Directorio de sistema:                     C:\WINDOWS\system32
+Dispositivo de arranque:                   \Device\HarddiskVolume2
+Configuraci¢n regional del sistema:        es-mx;Espa¤ol (M‚xico)
+Idioma de entrada:                         es-mx;Espa¤ol (M‚xico)
+Zona horaria:                              (UTC-06:00) Guadalajara, Ciudad de M‚xico, Monterrey
+Cantidad total de memoria f¡sica:          14,284 MB
+Memoria f¡sica disponible:                 10,088 MB
+Memoria virtual: tama¤o m ximo:            16,460 MB
+Memoria virtual: disponible:               10,644 MB
+Memoria virtual: en uso:                   5,816 MB
+Ubicaci¢n(es) de archivo de paginaci¢n:    C:\pagefile.sys
+Dominio:                                   WORKGROUP
+Servidor de inicio de sesi¢n:              \\DESKTOP-LQ1NH2S
+Revisi¢n(es):                              8 revisi¢n(es) instaladas.
+                                           [01]: KB4601050
+                                           [02]: KB4562830
+                                           [03]: KB4570334
+                                           [04]: KB4580325
+                                           [05]: KB4586864
+                                           [06]: KB4598481
+                                           [07]: KB5000802
+                                           [08]: KB5000858
+Tarjeta(s) de red:                         1 Tarjetas de interfaz de red instaladas.
+                                           [01]: Realtek PCIe GbE Family Controller
+                                                 Nombre de conexi¢n: Ethernet
+                                                 DHCP habilitado:    S¡
+                                                 Servidor DHCP:      192.168.1.254
+                                                 Direcciones IP
+                                                 [01]: 192.168.1.74
+                                                 [02]: fe80::4932:8362:9eab:880b
+Requisitos Hyper-V:                        Extensiones de modo de monitor de VM: S¡
+                                           Se habilit¢ la virtualizaci¢n en el firmware: No
+                                           Traducci¢n de direcciones de segundo nivel: S¡
+                                           La prevenci¢n de ejecuci¢n de datos est  disponible: S¡

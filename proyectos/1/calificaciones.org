@@ -1,0 +1,296 @@
+#+title: Proyecto 1 • Calificaciones y comentarios
+#+options: toc:nil
+
+* ¿Qué lineamientos empleo para calificar?
+
+  No puedo calificar a este “proyecto” a partir de criterios técnicos,
+  pues –como se los mencioné– es principalmente un /control de
+  lectura/. Estoy calificando alrededor de su expresión escrita, que
+  es lo único que puedo juzgar libre de ambigüedad... y un tradicional
+  punto débil que, desafortunadamente, cargan muchos ingenieros hacia
+  su vida profesional.
+
+* Miranda Álvarez y David Hernández
+- Documento :: [[./AlvarezMiranda-HernandezDavid/AlvarezMiranda-HernandezDavid.pdf][AlvarezMiranda-HernandezDavid.pdf]]
+- Fascículo :: 18
+- Comentarios ::
+  - Esta es la primera vez que pido que entreguen este proyecto como
+    texto o como mapa conceptual. Y me parece que el mapa que
+    realizaron (que es el primero que veo -- y eso que no me fui en
+    el orden secuencial en que presento las calificaciones) está muy
+    bien elaborado.
+  - Hay algunos puntos de ortografía ("linea" por "línea") o dedazos
+    ("areo" por "aéreo"). ¡Ojo!
+  - Es un muy buen trabajo. En temas como el que eligieron,
+    /Transporte informatizado/, sería interesante realizar el
+    ejercicio de imaginarse cómo sería el mundo de entonces en
+    relación con el actual, y qué tan acertadas son las observaciones
+    y predicciones que realiza el articulista.
+- Calificación :: 9
+
+* Alejandro Antonio
+- Documento :: [[./AntonioAlejandro/Proyecto1.pdf][Proyecto1.pdf]]
+- Fascículo :: 11
+- Comentarios ::
+  - Hiciste una muy buena revisión de la revista entera, no únicamente
+    de un capítulo y la computadora reseñada. ¡Muy bien!
+  - Buena observación en el sentido de que "extrañaste" un
+    acercamiento técnico al tema que revisaste. Considera que esta
+    serie es un "curso práctico del ordenador personal, el micro y el
+    miniordenador"; yo lo justifico en tanto que era muy para público
+    en general (insisto: yo lo seguí todavía cuando niño), y un
+    simulador de vuelo era aún visto como un programa bastante
+    complejo; sólo explicar lo que muestran en pantalla en la segunda
+    página del texto requeriría mucho más que el espacio que dedicaban
+    a cada tema. Si buscabas un tema más técnico, iban dando un curso
+    paso a paso de BASIC (para este número, "estructuras de control").
+  - ¡No veas como tan imposible que la ZX81 fuera mejor y más barata
+    que su antecesora, la ZX80! Considera que la electrónica empleada
+    (por el ULA) es mucho más sencilla, y que está pensada ya ante la
+    necesidad de masificación que mostró la ZX80...
+  - Me gusta además que junto a los temas reseñados contribuyes
+    también con tu opinión al respecto. ¡Buenísimo!
+- Calificación :: 10
+
+* Oswaldo Cabrera y Hanna Ceres
+- Documento :: [[./CabreraOswaldo-CeresHanna/PROYECTO1SO.pdf][PROYECTO1SO.pdf]]
+- Fascículo :: 19
+- Comentarios ::
+  - Buen resumen de las características mencionadas de la Acorn, y muy
+    buena relación de éstas con lo visto en clase.
+  - Muy de acuerdo: Una de las principales razones para el éxito de
+    las primeras computadoras fue la posibilidad de utilizarlas para
+    el aprendizaje, para lo cual las simulaciones eran una gran
+    herramienta. Y, me permito agregar: Ayuda a aprender a realizar
+    /abstracción/ de conceptos.
+- Calificación :: 10
+
+* Mario Domínguez
+- Documento :: [[./DomínguezMario/Proyecto1.pdf][Proyecto1.pdf]]
+- Fascículo :: 11
+- Comentarios ::
+  - Les pedí que me indicaran su matrícula para encontrar por qué
+    eligieron ese fascículo. Tu matrícula termina en 73; te tocaba el
+    fascículo ⌊73/4⌋ = 18, no el 11
+    - Acepto la entrega del 11 (mi formulita es a fin de cuentas para
+      cubrir los fascículos de la forma más homogénea posible), pero
+      te faltó seguir instrucciones en un punto: /En caso de que hayas
+      quedado sin pareja, asume que *m₂ = 00000000*./ Pero no te
+      preocupes, esto era sencillamente para repartir los proyectos,
+      no conlleva penalización.
+  - Efectivamente, el acoplador es exactamente una de las versiones
+    tempranas de los modems. Dejó de utilizarse por su baja tolerancia
+    al ruido; hubo acopladores de hasta 1200 bauds, hasta donde sé,
+    pero hacia principios de los 1990s ya todos los modems eran
+    dispositivos independientes que gestionaban la línea telefónica.
+  - El sonido de los modems a que te refieres... Bueno, en los /viejos
+    tiempos/ era mucho más simple que el multi-tonos que tuvo que
+    emplearse para cuando comenzamos a utilizar mayores anchos de
+    banda. Los modems acústicos llegaron a su límite físico a los
+    56Kbps, hacia los 2000s tempranos.
+  - El comentario que haces respecto a la cantidad de conectores de la
+    ZX81 es muy cierto: Cada computadora tenía puertos específicos
+    para su uso. Cuando apareció USB a mediados de los 1990s tardó
+    mucho tiempo en "despegar", la gente no le tenía fé a ese nuevo
+    tipo de conexión universal.
+  - Si bien haces notar correctamente que el ULA hoy en día se
+    presentaría como un FPGA, a mí más me llama la atención que este
+    ULA es lo que ahora llamamos "System-on-a-Chip" o /SoC/. Asómate a
+    [[http://www.primrosebank.net/computers/zx80/zx80_vs_zx81.htm][esta comparación entre la ZX80 y ZX81]], dos modelos muy
+    similares. La ZX81 resultaba mucho más económica y confiable por
+    contar de mucho menos chips discretos.
+  - Todos todos todos absolutamente todos odiaban los teclados de
+    membrana de las Sinclair. A pesar de ello, fueron máquinas muy
+    exitosas por lo económicas que eran.
+- Calificación :: 10
+
+* Jorge Ceballos
+- Documento :: [[./CeballosJorge/Proyecto1_S.O_PCJF.pdf][Proyecto1_S.O_PCJF.pdf]]
+- Fascículo :: 23
+- Comentarios ::
+  - Haces un buen recorrido por la revista entera, no únicamente dos
+    de los artículos como lo pedí. Sea sin querer o a propósito, ¡muy
+    buen esfuerzo adicional! 😉
+  - Aunque por lo mismo, la profundización en cada tema, o lo que cada
+    uno de ellos te dejó, resultó muy somero para hacer reflexiones o
+    comentarios adicionales ☹
+- Calificación :: 10
+
+* Lizeth Duran y Karen Reyes
+- Documento :: [[./DuranLizeth-ReyesKaren/Sistop-Proyecto1.pdf][Sistop-Proyecto1.pdf]]
+- Fascículo :: 7
+- Comentarios ::
+  - Me gusta mucho el estilo informal en que presentan su texto, con
+    mucha similitud –creo yo– con los textos fuente.
+  - ¡Muy bueno que hayan revisado la revista entera, y no únicamente
+    dos artículos! Y me gusta mucho que, pese a la brevedad
+    resultante de resumir todos los textos en tan poco espacio, logran
+    conectar en lo técnico y en lo humano con ellos.
+- Calificación ::
+
+* Brenda Fuentes
+- Documento :: [[./FuentesBrenda/Proyecto1_SO.pdf][Proyecto1_SO.pdf]]
+- Fascículo :: 8
+- Comentarios ::
+  - Es buena tu observación. Hoy en día, si acaso, los manuales de
+    nuestras computadoras presentan el cómo conectarlas... ¡Y da
+    gracias! Había muchas razones para que los manuales de antes
+    tuvieran mayor información. No podías buscarla en Internet (no
+    existía en las casas), cada computadora era una pieza bastante
+    única (no podíamos asumir compatibilidad como hoy), y los
+    usuarios... bueno, comprendían que para sacarle jugo a su equipo,
+    tendrían que programarla un poco.
+  - Ojo con la ortografía — Omitiste varios acentos, utilizaste "a" en
+    vez de "ha", y varios puntos menores, ¡pero no por ello menos
+    importantes para tu imagen a la hora de presentar un documento!
+- Calificación :: 9
+
+* Alberto Garcia Figueroa Munguía y Edgar Cristóbal Garcia Gutierrez
+- Documento :: [[./GarciaFigueroaGarciaGutierrez/Proyecto_1.pdf][Proyecto_1.pdf]]
+- Fascículo :: 14
+- Comentarios ::
+  - Una reseña buena y bastante completa del Lisa. Sólo como
+    anotaciones menores:
+    - Parte de la razón del fracaso de esta máquina, a la larga, fue
+      su precio... Y este venía en buena medida por la memoria,
+      extremadamente elevada (1MB como ustedes indican). Esta cantidad
+      de memoria por sí sola costaba del orden de US$5,000 (del precio
+      total de ~US$10,000).
+    - El sistema operativo de la Lisa no manejaba múltiples
+      usuarios. Si bien manejaba /multitarea cooperativa/, no existía
+      el concepto de /superusuario/ al que estamos acostumbrados hoy
+      en día.
+  - Jejeje, me gusta cómo comparan los dos artículos que vieron, de la
+    Tandy Color y la Lisa. Y sí, la comparación se antoja casi tan
+    desproporcionada... ¡como comparar a la Lisa con una computadora
+    de 2020!
+- Calificación :: 10
+
+* Iván Hernández y Antonio Reyes
+- Documento :: [[./HernandezIvanReyesAntonio/proyecto1.pdf][proyecto1.pdf]]
+- Fascículo :: 23
+- Comentarios ::
+  - ¡Ojo con el lenguaje! Si bien comprendo lo que quieren decir,
+    algunos usos que tienen entorpecen la lectura. Por ejemplo:
+    - Les aseguro que [[https://es.wiktionary.org/wiki/bardear#Espa%C3%B1ol][bardear]] no significa lo que ustedes querían
+      decir.
+    - No existe la /columna espinal/ (podría ser /columna vertebral/ o
+      /espina dorsal/), y... Bueno, como sea, no estoy seguro de que
+      el símil que presentan ayuda a la comprensión.
+    - La palabra /ósea/ (pág. 2) va acentuada, y hace referencia a los
+      huesos. Supongo que ustedes querían escribir /o sea/.
+    - El último párrafo resulta difícil de leer, les falta separar por
+      claridad con un par de comas.
+  - Respecto a la Sinclair QL: El uso del segundo procesador Intel
+    8049 podría ser un ejemplo de lo que les presenté como
+    /multiprocesamiento asimétrico/, bastante similar al ejemplo que
+    mencioné de las computadoras Amiga.
+- Calificación :: 8
+
+* Victor Hernández
+- Documento :: [[./HernandezVictor/VictorFasciculo2.png][VictorFasciculo2.png]]
+- Fascículo :: 2
+- Comentarios ::
+  - No indicas sobre qué fascículo trabajaste, me obligaste a buscar
+    manualmente :-(
+  - Cuando generes mapas conceptuales, te sugiero fuertemente usar
+    proporciones texto/espacios más "generosas". Tu trabajo resultó en
+    un archivo de área muy grande, pero con texto muy pequeño, que
+    obliga a acercarse a sección por sección
+  - Para varios de los temas, la información que presentas consiste
+    básicamente de recortes de la revista. Parte de lo que buscan los
+    ejercicios derivados de /control de lectura/ es encontrar la
+    reacción que te produce la información que recibes, la elaboración
+    que puedas hacer a partir de ella; sólo copiar los puntos más
+    relevantes que te muestra la revista queda muy corto.
+- Calificación :: 7.5
+
+* Hugo Juarez y Eduardo Moreno
+- Documento :: [[./JuarezHugo-MorenoEduardo/JuarezHugo-MorenoEduardo_Proyecto1.pdf][JuarezHugo-MorenoEduardo_Proyecto1.pdf]]
+- Fascículo :: 19
+- Comentarios ::
+  - Me parece muy relevante la observación que hace Hugo, en que la
+    computadora es presentada como una herramienta más, que hay que
+    aprender a utilizar (programando). Sí, en esa época... Si bien era
+    claramente posible utilizar programas preexistentes, cualquier
+    usuario medianamente avezado terminaba creando sus propias
+    soluciones a necesidades específicas. Muy lejos de lo que vemos
+    hoy en día, desafortunadamente ☹.
+  - Muy atinada también la reflexión final de Eduardo.
+- Calificación :: 10
+
+* Andre Luna y Rafael Ortega
+- Documento :: [[./LunaAndre-OrtegaRafael/proyecto1.pdf][proyecto1.pdf]]
+- Fascículo :: 12
+- Comentarios ::
+  - No indican qué fascículo revisaron, me tocó hacer las cuentas y
+    ver que correspondiera.
+  - No siguieron las indicaciones que les di, de seleccionar un
+    artículo a su gusto además del tema central (revisión de un equipo
+    de la época).
+  - A pesar de lo cual... ¡Muy buen trabajo y muy buenas reflexiones!
+    Me permito (y espero que no lo vean como mera vanidad)
+    compartirles un texto que publiqué al respecto en 2012, en la
+    revista /Software Gurú/: [[https://sg.com.mx/revista/los-juegos-clave-para-el-desarrollo-del-c%C3%B3mputo][Los juegos: clave para el desarrollo del
+    cómputo]].
+  - Los cassettes se utilizaron mucho hasta los 1980s, aunque ya ni a
+    mí me resultaron muy habituales. ¿Su principal ventaja frente a
+    los discos? Dado que su mecánica es mucho más sencilla, su precio
+    era muchísimo menor al de los discos... pero resultaban sin duda
+    muchísimo más engorrosos, lentos y difíciles de utilizar.
+- Calificación :: 8.5
+
+* David Perales
+- Documento :: [[./PeralesDavid/PeralesDavid_Proyecto1.pdf][PeralesDavid_Proyecto1.pdf]]
+- Fascículo :: 17
+- Comentarios ::
+  - Sin duda, uno de los aspectos que más ha avanzado del cómputo es
+    la ergonomía... De sólo pensar en el diseño físico de las
+    computadoras de los 80, ¡me duelen las manos, ojos y espalda!
+  - Me da gusto que te resultara de interés el artículo sobre la Tandy
+    MC-10. No te diría yo que fue un modelo particularmente exitoso o
+    significativo, pero probablemente sí característico.
+  - Si te interesa el /retrocomputing/, un punto importante para
+    conocer cómo eran esos bichos es que hoy se pueden utilizar muchas
+    de las computadoras de esa época mediante emulación.
+- Calificación :: 10
+
+* Luis Mario Pérez
+- Documento :: [[./PerezLuisMario/Sistemas Operativos - Proyecto 1.pdf][Sistemas Operativos - Proyecto 1.pdf]]
+- Fascículo :: 2
+- Comentarios ::
+  - Muy cierto, el BASIC de hasta fines de los 1980s requería que
+    todas las líneas se indicaran con el número en el cual
+    iban... Posible herencia de la época de las tarjetas perforadas, o
+    al menos, de antes de los editores de texto a pantalla
+    completa. Si dabas una instrucción sin especificar número de
+    línea, el intérprete de BASIC la ejecutaba inmediatamente.
+- Calificación :: 10
+
+* Ramses Rosario
+- Documento :: [[./RosarioRamses/Proyecto1.pdf][Proyecto1.pdf]]
+- Fascículo :: 2
+- Comentarios ::
+  - No indicas qué fascículo revisaste, me tocó hacer las cuentas y
+    ver cuál era.
+  - Presentas el mapa conceptual de la computadora reseñada
+    únicamente, pero no cubriste el artículo adicional que les solicité
+  - El resumen de características y puntos generales de la Oric es
+    satisfactorio.
+- Calificación :: 7
+
+* René Vázquez
+- Documento :: [[./VazquezRene/Proyecto1Fascículo17.pdf][Proyecto1Fascículo17.pdf]]
+- Fascículo :: 10
+- Comentarios ::
+  - No indicas qué fascículo revisaste, me tocó hacer las cuentas y
+    ver cuál era.
+  - Claro está... Alguien tenía que elegir el artículo que elegiste
+    tú, /Sistema Operativo/ 😉 Y claro, habrás notado que la
+    definición que usa la revista es... Bastante distinta de la que
+    empleo yo. Llamémosle... El avance del tiempo 😉 Tal vez lo
+    principal que veían en ese momento que requería de la asistencia
+    de un /gran programa supervisor/ era el acceso a disco, pero estoy
+    seguro de que les di un par de ejemplos de funciones generales que
+    pueden sólo ser vistas como parte de un sistema operativo.
+- Calificación :: 9

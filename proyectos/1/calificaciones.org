@@ -126,7 +126,7 @@
     dos artículos! Y me gusta mucho que, pese a la brevedad
     resultante de resumir todos los textos en tan poco espacio, logran
     conectar en lo técnico y en lo humano con ellos.
-- Calificación ::
+- Calificación :: 10
 
 * Brenda Fuentes
 - Documento :: [[./FuentesBrenda/Proyecto1_SO.pdf][Proyecto1_SO.pdf]]

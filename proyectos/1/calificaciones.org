@@ -166,6 +166,15 @@
     de 2020!
 - Calificación :: 10
 
+* David Israel Gutiérrez Núñez
+- Documento :: [[./GutierrezDavid.pdf][GutierrezDavid.pdf]]
+- Fascículo :: 18
+- Comentarios ::
+  - Me gustó mucho tu reseña, particularmente el que te enfoques más
+    al efecto que ésta tuvo sobre tí, lo que sabes y crees sobre el
+    cómputo. ¡Muy buen trabajo!
+- Calificación :: 10
+
 * Iván Hernández y Antonio Reyes
 - Documento :: [[./HernandezIvanReyesAntonio/proyecto1.pdf][proyecto1.pdf]]
 - Fascículo :: 23

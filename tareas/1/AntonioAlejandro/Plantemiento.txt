@@ -1,0 +1,22 @@
+Ejercicios de sincronización
+Ejercicio: Los alumnos y el asesor por Alejandro Antonio
+
+El programa fue realizado en Python. El comando para ejecutarlo es: python3 AsesorAlumnos.py
+El programa no se cierra una vez finalizado por lo que se requiere una interrupción del sistema, se recomienda Ctrl+c
+
+Para esta simulación, se corre un hilo para el asesor y un hilo para cada estudiante. El hilo del estudiante tiene un id y un número de preguntas 'preguntas_totales' aleatorio entre 1 y y. Los hilos entre estudiante y asesor se comunican a través de la lista 'preguntas'. Cuando un estudiante hace una pregunta, pone su id y el numero de su pregunta en la lista preguntas. El asesor debe tomar el id y el numero de pregunta de la lista preguntas y 'responderla' (se imprime lo que obtuvo de la lista).
+
+Para este problema fue necesaria una combinación de multiplex, mutex, y señalización. 
+El multiplex se utiliza para asegurarse de que en todo momento solo hay x alumnos en el cubículo, por lo que se crea un semaforo 'cubiculo' cuyo valor se solicita al usuario y se almacena en x. El alumno lo adquiere una vez inicializado su numero de preguntas y lo libera despues de que todas han sido resueltas. Se le pide al usuario un número máximo de preguntas que pueden realizar y se almacen en y. Por otra parte se solicita la cantidad de alumnos a simular para posteriormente almacenarse en 'num_alumnos'
+Los demás semáforos se utilizan para resolver la comunicación entre alumnos y asesor, similar al problema de productores y consumidores. 
+El semaforo 'atencion' es un mutex que se utiliza para proteger a preguntas de las modificaciones por alumnos y asesor. 
+El semaforo 'pregunta', inicializado en 0, sirve para que un alumno señalice al asesor que una pregunta ha sido hecha. Es el primer semaforo que adquiere el asesor (él espera a que haya una pregunta antes de hacer cualquier cosa). El alumno lo libera una vez ha agregado su pregunta a preguntas. 
+El semáforo 'capacidad', inicializado en 1, se refiere a la capacidad de atención del profesor. Es el que se encarga de verificar que siempre hay solo una pregunta en preguntas (si el profesor fuera capaz de retener n preguntas al mismo tiempo antes de responderlas, el semaforo se inicializaria en n). El alumno adquiere este semáforo antes de hacer una pregunta (incluso antes de adquirir el mutex 'atencion'). El asesor lo libera cuando ya terminó de responder la pregunta. Es una especie de mutex, pero la 'sección crítica' que protege es todo el proceso de pregunta y respuesta. 
+
+Cosas a destacar: 
+* El hilo del asesor está dentro de un "while(true)", pero no es espera activa; está esperando a que alguien libere el semáforo 'preguntas' (El programa indica que "El asesor espera.").
+
+* Si un alumno hace una pregunta, esa debe ser la siguiente que responda el asesor, y no se pueden hacer más preguntas entre esos dos eventos. Sin embargo, es posible que alumnos entren o salgan del cubículo en ese lapso de tiempo.
+
+Comentarios:
+* Personalmente me costo mucho resolver el problema ya que no suelo programar en paralelo por lo que mi lógica a veces me fallaba por lo tanto el desarrollo se puede resumir en prueba y error hasta poder llegar al resultado deseado.

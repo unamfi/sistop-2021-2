@@ -1,0 +1,6 @@
+Hernández Gutiérrez Víctor Hugo
+
+Problema: El cruce del río
+Lenguaje: Python 3
+
+Para resolver el problema se utilizaron mutex y barreras.

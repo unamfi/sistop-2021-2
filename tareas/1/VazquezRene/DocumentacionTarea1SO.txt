@@ -1,0 +1,29 @@
+Sistemas Operativos
+René Vázquez Peñaloza
+Tarea 1
+
+Problema de Santa Claus
+
+Se desarrolla en Python version 3.8.2
+
+Se definen los semaforos SantaSem, RenoSem, ElfoAyudaSem, ElfoSem, asi como las variables RenosContador la cual contabilizara los elfon que van llegando, 
+renostotal organizara el orden de las entradas de los renos, ElfosContador la cual contabilizara la llegada de los elfos, 
+elfostotal seran los elfos que tienen problemas y turno como su definicion lo indica contabilizara los turnos delas preguntas.
+
+Se definen santa, reno y elfo.
+
+Santa indica el proceso principal de dormir y despertar cuando llegan 3 elfos o 9 renos,
+asi como si 3 elfos piden ayuda con ElfoAyudaSem se liberaran y con ElfoSem los 3 queya fueron ayudados
+
+Por otro lado si ya estan los 9 renos reunidos despiertan a santa el cual debera liberar RenoSem.
+
+Para el proceso reno se van juntando con el RenoSem.acquire, cuando ya se reunieron los 9 renos
+deberan activar con SantaSem.release e indicaran que estan listos
+
+Para el proceso del elfo, se determina quien tiene duda se agrupan de 3 mientras los otros se bloquean con 
+ElfoAyudaSem hasta que santa los libere, recordando que santa solo se depsertara cuando esten los 3 reunidos.
+
+Finalmente definimos el arreglo de los hilos elfo, reno y santa y esperamos que se completen todos los hilos.
+
+
+

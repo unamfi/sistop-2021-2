@@ -11,11 +11,11 @@
   como lo refleja la rúbrica, obtiene una calificación un poco más alta)
   el que ustedes me planteen los temas de su interés.
 
-  |-------+------+-------------+-------+------------+-----------+------------|
-  | Fecha | Tema | Integrantes | Video | Documentos | Preguntas | Evaluación |
-  |-------+------+-------------+-------+------------+-----------+------------|
-  |       |      |             |       |            |           |            |
-  |-------+------+-------------+-------+------------+-----------+------------|
+  |------------+--------------------------+------------------------------+---------+-------------------------------------+------------------------+------------|
+  |      Fecha | Tema                     | Integrantes                  | Video   | Documentos                          | Preguntas              | Evaluación |
+  |------------+--------------------------+------------------------------+---------+-------------------------------------+------------------------+------------|
+  | 2021.06.28 | Sistemas basados en grid | Oswaldo Cabrera, Hanna Ceres | [[https://youtu.be/FexnbGHTMJE][YouTube]] | [[./CabreraOswaldo-CeresHanna/Sistemas_basados_en_Grid.pdf][Documento (PDF)]], [[CabreraOswaldo-CeresHanna/Sistemas_Basados_en_Grid_presentación.pdf][Presentación (PDF)]] | [[https://github.com/unamfi/sistop-2021-2/issues/136][Preguntas y respuestas]] |            |
+  |------------+--------------------------+------------------------------+---------+-------------------------------------+------------------------+------------|
   #+TBLFM: 
 
 * Rúbrica de evaluación

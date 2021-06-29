@@ -32,7 +32,7 @@
     - No estoy seguro de la necesidad de diferenciar =capacidad= de
       =atencion=: El límite de capacidad del cubículo lo pones con
       =cubiculo=. Pero no analicé a detalle.
-- Calificación :: 10
+- Calificación :: *10*
 
 ** Oswaldo Cabrera y Hanna Ceres
 - Documentación :: [[./CabreraOswaldo-CeresHanna/README.md][README.md]]
@@ -48,7 +48,7 @@
   - Reconocieron a =despertar_asesor= como una /señalización/, aunque
     si la miran de cerca, se parece mucho-mucho a un /apagador/, ¿no
     les parece?
-- Calificación :: 10
+- Calificación :: *10*
 
 ** Karen Reyes
 - Documentación :: [[./ReyesKaren/Tarea1.pdf][Tarea1.pdf]]
@@ -230,7 +230,7 @@
       desbalanceado?
   - Ojo: ¡No estás protegiendo a =Ratones_presentes= de acceso
     simultáneo!
-- Calificación :: 2 + 2 + 2 + 3 = 9
+- Calificación :: 2 + 2 + 2 + 3 = *9*
 
 ** Luis Mario Perez
 - Documentación :: [[./PerezLuisMario/docs.md][docs.md]]
@@ -276,4 +276,4 @@
       Gato 0 está dejando la zona de platos
     #+end_src
     ... ¡Un verdadero raticidio! ☹
-- Calificación :: 10
+- Calificación :: *10*

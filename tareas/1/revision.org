@@ -1,0 +1,279 @@
+# Revisión de la tarea 1
+#+options: toc:nil num:nil
+
+* Criterios de calificación
+
+- Documentación :: 2 puntos
+- Programa funcional :: 2 puntos
+- Planteamiento resuelto satisfactoriamente :: 3 puntos
+- Aplicación de los principios vistos en clase :: 3 puntos
+
+* Problema del /asesor y los alumnos/
+
+** Alejandro Antonio
+- Documentación :: [[./AntonioAlejandro/Plantemiento.txt][Plantemiento.txt]]
+- Archivos :: [[./AntonioAlejandro/AsesorAlumnos.py][AsesorAlumnos.py]]
+- Comentarios ::
+  - ¡Muy buena implementación!
+  - Me llamó la atención que un alumno espere consistentemente a
+    escuchar la pregunta de su siguiente compañero antes de irse
+    (después de que le respondieron su última palabra). ¿Son chismosos
+    los alumnos?
+
+    Podrías haberlo solucionado si el =sleep(0.2)= fuera antes de
+    adquirir =capacidad= y =atención=, o que esperaras de forma
+    condicional a =num_pregunta < preguntas_totales=
+  - Me parece que en situaciones de alta contención, podría colarse
+    una pregunta entre que un alumno suelta al mutex =atencion= y el
+    asesor los toma. Creo que una solución más limpia sería /pasarse
+    la estafeta/: Que el alumno obtuviera el mutex, despertara al
+    asesor mediante una señalización, y el asesor soltara el mutex
+    (tal como lo haces con =capacidad=).
+    - No estoy seguro de la necesidad de diferenciar =capacidad= de
+      =atencion=: El límite de capacidad del cubículo lo pones con
+      =cubiculo=. Pero no analicé a detalle.
+- Calificación :: 10
+
+** Oswaldo Cabrera y Hanna Ceres
+- Documentación :: [[./CabreraOswaldo-CeresHanna/README.md][README.md]]
+- Archivos :: [[./CabreraOswaldo-CeresHanna/alumnoYasesor.py][alumnoYasesor.py]]
+- Comentarios ::
+  - ¡Muy buena implementación!
+  - Más que usar un arreglo de =alumnos_con_dudas=, me gustaría haber
+    visto que representaran esto con un semáforo — Se inicializa en 0,
+    cada alumno que tiene una duda lo incrementa, y en vez del =while
+    len(alumnos_con_dudas)!=0= podrían haber hecho un simple
+    =acquire()=; creo que resultaría más simple (aunque su respuesta
+    es correcta, sólo sería /más mejor/)
+  - Reconocieron a =despertar_asesor= como una /señalización/, aunque
+    si la miran de cerca, se parece mucho-mucho a un /apagador/, ¿no
+    les parece?
+- Calificación :: 10
+
+** Karen Reyes
+- Documentación :: [[./ReyesKaren/Tarea1.pdf][Tarea1.pdf]]
+- Archivos :: [[./ReyesKaren/cubiculo.py][cubiculo.py]]
+- Comentarios ::
+  - ¡Me gusta el estilo! Separar el problema en clases, un uso más
+    /idiomático/ de =with miSemaforo:= en vez de acquire/release. ¡Muy
+    bien!
+    - Me permito opinar respecto a tu jerarquía de clases: Si bien
+      podrías decir que un =Cubiculo= /tiene-un/ =profesor=, no es muy
+      limpio que sea =cubiculo().asesoria()= el que genera a los hilos
+      =alumno=: Los alumnos /ya instanciados/ acuden al =Cubiculo=
+      para obtener respuestas del =profesor=. Yo sugeriría modelarlo
+      así en tu =main()=:
+      #+begin_src python
+	def main():
+	    c = Cubiculo()
+	    c.asesoria() # → se convierte en self.profesor.start()
+	    for alumno in num_alumnos():
+		alumno.start(cubiculo=c)
+      #+end_src
+  - Lo del error que ocurre ocasionalmente está interesante: /casi/
+    siempre (pero no siempre, ¡benditas condiciones de carrera!) lo
+    veo justo después de que un alumno terminó de resolver sus dudas —
+    ¡y es seguido de ese mismo alumno realizando otra pregunta!
+    #+begin_src text
+      Al alumno 2 ya se le respondieron todas las preguntas 
+      Quedan 5 en el cubículo
+      Exception in thread Thread-26:
+      Traceback (most recent call last):
+	File "/usr/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+	  self.run()
+	File "/usr/lib/python3.9/threading.py", line 892, in run
+	  self._target(*self._args, **self._kwargs)
+	File "/home/gwolf/vcs/sistop-2021-2/tareas/1/ReyesKaren/cubiculo.py", line 47, in entrar
+	  self.alumnos_cub.remove(self.id)
+      ValueError: list.remove(x): x not in list
+      El alumno 2 hace una pregunta: Pregunta 1
+      El alumno 2 está en espera de una respuesta
+    #+end_src
+    ... Me parece que tienes una condición de carrera sobre la lista
+    de alumnos en el cubículo (=alumnos_cub=). Varios alumnos la
+    modifican a la vez. ¿Intentaste protegerla con un mutex?
+- Calificación :: 2 + 2 + 2.5 + 3 = *9*
+
+* Problema de /Santa Claus/
+
+** Jorge Ceballos
+- Documentación :: [[./CeballosJorge/README.md][README.md]]
+- Archivos :: [[./CeballosJorge/SantaClaus.py][SantaClaus.py]]
+- Comentarios ::
+  - ¡Ay mis ojooooos! Ꙭ En inglés, /reno/ se dice /reindeer/ (no
+    /reigndeer/)... ¡Me cuesta trabajo leer el código con /24/ casos
+    de la misma falta de ortografía
+    - ...no pasa nada, no es en tu lengua materna... Pero igual me
+      hace llorar ☹
+  - Tu programa no se ejecuta porque empleaste dos variables que no
+    /cuadran/ con su definición: En las líneas 84 y 89 haces
+    referencia respectivamente a =l= y =k=, pero en los ciclos
+    respectivos estás usando =z= y =y=.
+  - Tanto en elfos como en renos, no proteges de acceso simultáneo a
+    la variable contador, =total_reigndeers= y =totalElves=.
+  - Entiendo que eres mayor de edad y ya no crees en Santa,
+    pero... ¿Matarlo así de gacho? Vamos, Santa existe, evalúa la
+    situación /una única vez/, y... aunque hay un =while True=, el
+    =break= de la línea 72 hace que se salga inmediatamente después de
+    su segunda invocación (después de la segunda vez que alguien haga
+    un =wakeUpSanta.release()=)
+  - No entiendo el funcionamiento de =elvesInCharge= / =elfSemaphore=,
+    pero creo que son en buena medida las culpables de que los elfos
+    dejen de trabajar después de poco tiempo.
+- Calificación :: 2 + 1 + 1.5 + 3 = *7.5*
+
+** Rene Vazquez
+- Documentación :: [[./VazquezRene/DocumentacionTarea1SO.txt][DocumentacionTarea1SO.txt]]
+- Archivos :: [[./VazquezRene/Tarea1SO.py][Tarea1SO.py]]
+- Comentarios ::
+  - No sé en qué lenguaje hayas intentado la implementación... Pero
+    esto no es Python.
+    - Tiene pedazos de semántica de Python, pedazos de sintaxis
+      pseudo-C... ¿...?
+  - En ningún momento se ve (ni en pseudocódigo) que inicies los
+    distintos himos
+  - Esperas por un =papaSem=, pero no lo defines en ningún lugar.
+  - La indentación no me indica el flujo lógico del programa; indentas
+    y des-indentas sin que pueda entender el por qué.
+  - Este es un ejercicio que se resuelve fundamentalmente con barreras
+    (y reinicios a cero) y con señalizaciones, pero no veo nada por el
+    estilo.
+- Calificación :: 2 + 0 + 0 + 1.5 = *3.5*
+
+* Problema del /Cruce del río/
+
+** Victor Hernandez
+- Documentación :: [[./HernandezVictor/HernandezVictor.txt][HernandezVictor.txt]]
+- Archivos :: [[./HernandezVictor/cruceDelRio.py][cruceDelRio.py]]
+- Comentarios ::
+  - La documentación con que acompañas a tu tarea... Decir que es
+    mínima es ya decir mucho ☹ ¡Cuida la forma de tus entregas! Dice
+    mucho de tu trabajo.
+  - Ejecuté varias veces tu código; no llegó a cruzar exitosamente ni
+    una (siempre se queda en bloqueo mutuo, tengo que interrumpir con
+    Ctrl-C ☹) Y presentó varios comportamientos extraños:
+    - No respeta el planteamiento, entra un número impar de /serfs/:
+      #+begin_src text
+	$ python3 cruceDelRio.py 
+	Balsa esperando....
+	Balsa esperando....
+	Balsa esperando....
+	Balsa esperando....
+	Hacker 4 subió a la balsa
+	Serf 1 subió a la balsa
+	Hacker 4 subió a la balsa
+	Hacker 4 subió a la balsa
+      #+end_src
+    - El mismo /hacker/ ocupa varios asientos de la balsa:
+      #+begin_src text
+	$ python3 cruceDelRio.py 
+	Balsa esperando....
+	Balsa esperando....
+	Balsa esperando....
+	Balsa esperando....
+	Hacker 4 subió a la balsa
+	Hacker 5 subió a la balsa
+	Hacker 5 subió a la balsa
+	Hacker 5 subió a la balsa
+      #+end_src
+      Veo que al imprimir la lista de pasajeros imprimes ya sea a
+      =serfs= o a =hackers=, que son contadores; hay que reemplazar a
+      ambas (líneas 27 y 40) por =yo=. 
+  - Me gusta que tu programa esté parametrizado, declarando
+    =umbral_balsa= al principio. Sin embargo, en las tres funciones
+    =serf()=, =hacker()= y =balsa()= haces la comparación con los
+    valores literales 4 y 2.
+  - Te enredaste al mandar las señales. =serfs()= adquiere
+    =mutex_serfs()=, pero nunca la libera (esa es la razón por la que
+    nunca sube más de un =serf=). =balsa()= recibe correctamente la
+    señalización con =sem_balsa=, y adquiere y libera tanto
+    =mutex_serfs= como =mutex_hackers=.
+  - Me parece que el bloqueo se debe a la comparación en las líneas
+    50, 53 y 56 con =hackers == 4=, =serfs == 4= y
+    =serfs == 2 and hackers == 2=; no estoy seguro, pero me aprece que
+    entre el =sem_balsa.release()= y que =balsa()= hace
+    =mutex_hackers.acquire()= puede estarse /colando/ algún otro hilo
+    y aumentando el contador. Pero no quiero asegurarte que el
+    problema está ahí... ☹
+- Calificación :: 1 + 1.5 + 1.5 + 3 = *7*
+
+* Problema de /gatos y ratones/
+
+** Hugo Juarez Perez
+- Documentación :: [[./JuarezPerezHugo/README.txt][README.txt]]
+- Archivos :: [[./JuarezPerezHugo/Sync-Hugo.cpp][Sync-Hugo.cpp]]
+- Comentarios ::
+  - ¿Código en C++? ¡Un nuevo reto! ¡Me gusta! (me gusta el reto... No
+    me gusta C++ 😉
+    - No lo pude compilar ☹ Incluso dando =-std=c++20= me marca varios
+      errores horrendos:
+      #+begin_src text
+	Sync-Hugo.cpp:15:6: error: ‘counting_semaphore’ in namespace ‘std’ does not name a template type
+	   15 | std::counting_semaphore<2>Plato(0);
+	      |      ^~~~~~~~~~~~~~~~~~
+	Sync-Hugo.cpp:16:6: error: ‘binary_semaphore’ in namespace ‘std’ does not name a type; did you mean ‘binary_search’?
+	   16 | std::binary_semaphore RatonesComiendo(0);
+	      |      ^~~~~~~~~~~~~~~~
+      #+end_src
+      El uso que haces de estas funciones me parece legal según los
+      estándares... pero a =g++= no ☹
+    - Asumo como culpa mía no poder compilar tu código...
+  - ¡Me gusta cómo resolviste el "intentar implementar" el acuerdo
+    entre caballeros! A mí no me gusta =try_acquire()= en general, y
+    no lo enseño... Pero la implementación lo incluye, y permite
+    llegara a esta esquinita poco común (la realidad es que es
+    bastante poco común que un programa bien implementado con
+    sincronización cause ratones arañados o devorados...)
+    - Me parece que =actualRatonId = -1= y =ratonesComiendo.release()=
+      (líneas 44 y 45) sí asumen que atrapaste y mataste al ratón,
+      ¿no? ¿No llevan a que el sistema quede con =ratonesComiendo=
+      desbalanceado?
+  - Ojo: ¡No estás protegiendo a =Ratones_presentes= de acceso
+    simultáneo!
+- Calificación :: 2 + 2 + 2 + 3 = 9
+
+** Luis Mario Perez
+- Documentación :: [[./PerezLuisMario/docs.md][docs.md]]
+- Archivos :: [[./PerezLuisMario/cats_and_mice.py][cats_and_mice.py]]
+- Comentarios ::
+  - ¡Muy buena implementación, detallando muy bien la lógica del
+    apagador con todos los casos!
+  - El programa como lo presentas tiene un gran desbalance que
+    dificulta ver el desarrollo: 2 gatos y... ¡200 ratones! Además, va
+    a toda la velocidad que Python le permite, así que todos los
+    comportamientos interesantes se van. Bajando =number_of_mice= a
+    algo más manejable (5, 10), el comportamiento se ve como lo
+    esperaría.
+  - Metiendo un par de puntos de intercambio de control (=sleep(0.1)=)
+    pude ver que efectivamente manejas correctamente que un gato
+    /tenga que/ comerse a un ratón (contrario a lo que dije de las
+    implementaciones más comunmente hechas por los alumnos, en mi
+    respuesta anterior):
+    #+begin_src text
+      Ratón 1 está entrando a zona de platos
+      Ratón 0 está entrando a zona de platos
+      Ratón 2 está entrando a zona de platos
+      Ratón 3 está entrando a zona de platos
+      Ratón 4 está entrando a zona de platos
+      Gato 0 está comiendo de plato 5
+      Gato 0 terminó de comer de plato 5
+      Ratón 1 está comiendo de plato 3
+      Ratón 1 terminó de comer de plato 3
+      Ratón 0 está comiendo de plato 4
+      Ratón 0 terminó de comer de plato 4
+      Ratón 2 está comiendo de plato 2
+      Ratón 2 terminó de comer de plato 2
+      Ratón 3 está comiendo de plato 1
+      Ratón 3 terminó de comer de plato 1
+      Ratón 4 está comiendo de plato 6
+      Ratón 4 terminó de comer de plato 6
+      Ratón 1 murió a garras de Gato 0
+      Ratón 2 murió a garras de Gato 0
+      Ratón 4 murió a garras de Gato 0
+      Ratón 3 murió a garras de Gato 0
+      Ratón 0 murió a garras de Gato 0
+      Gato 1 está entrando a zona de platos
+      Gato 0 está dejando la zona de platos
+    #+end_src
+    ... ¡Un verdadero raticidio! ☹
+- Calificación :: 10

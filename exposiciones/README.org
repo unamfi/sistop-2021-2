@@ -15,6 +15,7 @@
   |      Fecha | Tema                     | Integrantes                  | Video   | Documentos                          | Preguntas              | Evaluación |
   |------------+--------------------------+------------------------------+---------+-------------------------------------+------------------------+------------|
   | 2021.06.28 | Sistemas basados en grid | Oswaldo Cabrera, Hanna Ceres | [[https://youtu.be/FexnbGHTMJE][YouTube]] | [[./CabreraOswaldo-CeresHanna/Sistemas_basados_en_Grid.pdf][Documento (PDF)]], [[CabreraOswaldo-CeresHanna/Sistemas_Basados_en_Grid_presentación.pdf][Presentación (PDF)]] | [[https://github.com/unamfi/sistop-2021-2/issues/136][Preguntas y respuestas]] |            |
+  | 2021.07.01 | Graphics Output Protocol | Hugo Juárez Pérez            | [[https://youtu.be/Ip5RBe8xiq4][YouTube]] | [[./JuarezPerezHugo/GraphicsOutputProtocol.pdf][Documento (PDF)]], [[./JuarezPerezHugo/GraphicsOutputProtocol_Presentacion.pdf][Presentación (PDF)]] | [[https://github.com/unamfi/sistop-2021-2/issues/139][Preguntas y respuestas]] |            |
   |------------+--------------------------+------------------------------+---------+-------------------------------------+------------------------+------------|
   #+TBLFM: 
 

@@ -1,0 +1,55 @@
+#+title: Evaluación de exposición: Graphics Output Protocol
+#+author: Gunnar Wolf
+
+- Tema presentado por :: Hugo Juárez Pérez
+- Calificación global :: 9.1 * 0.3 + 9.75 * 0.7 = *9.55*
+
+* Comentarios
+
+Dado que es una presentación en video, no puedo evaluar /dominio del
+tema/ y /presencia/ como lo hacemos habitualmente. Me centro en las
+respuestas que hagan a las preguntas de sus compañeros para el primero
+y en si la presentación "suena" leída directamente del material que
+prepararon o expuesta más libremente para el segundo.
+
+* Evaluación grupal
+
+Esta evaluación proviene de la encuesta que llenaron en línea. No
+tengo acceso al desglose, por lo cual presento únicamente el resumen
+de la evaluación.
+
+|--------------+-------+------------+----------+-----------+-------|
+| Originalidad | Nivel | Relevancia | Claridad | Presencia | Total |
+|--------------+-------+------------+----------+-----------+-------|
+|           10 |     9 |          9 |      8.5 |         9 |   9.1 |
+|--------------+-------+------------+----------+-----------+-------|
+
+** Comentarios de los compañeros
+
+Tu exposición recibió los siguientes comentarios anonimizados por
+parte de tus compañeros:
+
+- El audio del video era un poco bajo
+- Me costó trabajo prestar atención a tu expo porque tú tono de voz
+  fue muy bajo. Fuera de eso fue un tema realmente interesante!
+- Todo muy bien. Creo que el tema es original y me gustó la
+  explicación. Pero creo que es un poco díficil darle un enfoque a
+  sistemas operativos, por que como lo explicas, GOP está mayormente
+  hecho para cuando el SO no ha tomado el control. Al menos esa fue mi
+  impresión :(
+
+* Evaluación del docente
+
+| *Aspecto*              | *Peso* | *Evaluación* | *Puntos* |
+|------------------------+--------+--------------+----------|
+| Originalidad del tema  |    0.1 |           10 |       1. |
+| Material desarrollado  |    0.2 |           10 |       2. |
+| Contenido              |    0.2 |           10 |       2. |
+| Fuentes bibliográficas |    0.1 |           10 |       1. |
+| Uso del tiempo         |    0.1 |          7.5 |     0.75 |
+| Dominio del tema       |   0.15 |           10 |      1.5 |
+| Presencia              |   0.15 |           10 |      1.5 |
+|------------------------+--------+--------------+----------|
+| *Global*               |        |              |     9.75 |
+#+TBLFM: @<<$4..@>>$4=$2*$3::$4=vsum(@<<..@>>);f-2
+

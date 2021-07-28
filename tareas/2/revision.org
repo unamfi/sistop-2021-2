@@ -1,0 +1,126 @@
+#+title: Profundizando en la administración de memoria: Revisión de entregas
+
+Presento la revisión de sus trabajos agrupada por artículo.
+
+* Dentro del proceso
+
+** How to create your own malloc library
+
+*** Oswaldo Cabrera Pérez
+
+- Documento :: [[./OswaldoCabrera/Tarea2.pdf][Tarea2.pdf]]
+- Comentarios ::
+  - ¡Muy buen resumen!
+- Calificación :: 10
+
+*** Luis Mario Pérez Saldaña
+
+- Documento :: [[./PerezLuisMario/Tarea 2 - Sistemas Operativos.pdf][Tarea 2 - Sistemas Operativos.pdf]]
+- Comentarios ::
+  - Pedí un mapa conceptual, no un resumen en prosa. Eso sí: ¡tu
+    resumen es bastante bueno! ☺
+  - El inglés y el español frecuentemente tienen vocabularios
+    distintos.
+    - En español es incorrecto decir /prealocar/ (¿será que la memoria
+      se llena de contenido loco por anticipado?); la traducción de
+      /preallocate/ es /preasignar/.
+    - La palabra /library/ (inglés) se traduce en español a
+      /biblioteca/: El lugar a donde vas a buscar determinada
+      información (libros, funciones) para utilizarla. Es un error muy
+      común en nuestro campo. ¡No hables de /librerías/ en cómputo!
+  - Es bueno que utilices correctores ortográficos, pero no dejes que
+    hagan su trabajo ciegamente: /El algoritmo de free tampoco es
+    compilado/... Me tomó un par de lecturas darme cuenta que querías
+    decir /complicado/ (o... eso asumo, al menos)
+- Calificación :: 9
+
+** A Malloc Tutorial
+*** Víctor Hernández
+
+- Documento :: [[./HernandezVictor/HernandezVictor.pdf][HernandezVictor.pdf]]
+- Comentarios ::
+  - La entrega está difícil de comprender. el armado de tres imágenes
+    en un PDF quedo medio revuelta... Y me dejó, además, rascando la
+    cabeza hasta que encontré sobre qué artículo trabajaste
+  - La lectura de derecha a izquierda cuesta trabajo para cerebros
+    acostumbrados a leer en sentido inverso
+  - Das cobertura parcial al texto — no cubriste la organización
+    "externa" del heap ni lo mencionado respecto a =brk()= y =sbrk()=,
+    que me parece uno de los puntos más importantes de este texto.
+- Calificación :: 8
+
+** Inside memory management
+
+*** Jorge Pereda Ceballos
+
+- Documento :: [[./CeballosJorge/PeredaCeballosJorgeTarea2.pdf][PeredaCeballosJorgeTarea2.pdf]]
+- Comentarios ::
+  - Buen resumen del texto
+  - Lo que me mareó (y me hizo revisar y perder el tiempo un poco) es
+    que el ~60% del contenido de la página 1 se repite en la 2. ¿Por qué?
+  - La gran ventaja de la asignación por /memory pools/ es que la
+    asignación es baja, resultando cerca de /O(1)/ (no /O(n)/).
+  - La palabra /library/ (inglés) se traduce en español a
+    /biblioteca/: El lugar a donde vas a buscar determinada
+    información (libros, funciones) para utilizarla. Es un error muy
+    común en nuestro campo. ¡No hables de /librerías/ en cómputo!
+- Calificación :: 9
+
+*** René Vázquez
+
+- Documento :: [[./VazquezRene/Tarea2.pdf][Tarea2.pdf]]
+- Comentarios ::
+  - Falta de cubrir buena parte del contenido del artículo (p.ej. las
+    estrategias automáticas de gestión de memoria)
+  - La sección 2 de tu diagrama presenta los nombres de funciones
+    repetidos, pero no presenta explicación respecto a lo que hace
+  - Aunque el documento esté en tu directorio... ¡Ponle tu nombre a
+    las entregas que haces!
+- Calificación :: 8
+
+
+* Entre los distintos procesos
+
+** Exploring Swap on FreeBSD
+
+*** Alejandro Jesús Antonio Roblero
+
+- Documento :: [[./AntonioAlejandro/Exploring-Swap-on-FreeBSD.pdf][Exploring-Swap-on-FreeBSD.pdf]]
+- Comentarios ::
+  - Entregaste un archivo PDF, que soporta representación de objetos
+    vectoriales, pero la imagen que incluíste, que era originalmente
+    vectorial, no sólo la convertiste un bitmap, sino que la
+    compirmiste con JPG, que no es adecuado para este contenido
+    (si acercas la imagen, puedes ver "sucio" alrededor de las líneas,
+    y dificulta la lectura en los cuadros de texto con letra chica)
+    - Usa PNG para las imágenes no-fotográficas
+    - O mejor aún, manten la imagen en un formato vectorial, como SVG
+  - Buen resumen. Me parece muy interesante el uso que das de la
+    construcción de frases mediante verbos en tu mapa
+    conceptual. ¡Bien!
+    - En algunos casos das entrada a un poco de ambigüedad: Cuando a
+      un nodo llegan y salen varias rutas, puedes producir algunos
+      errores. Aunque me parece que en general estáĭen cuidado.
+- Calificación :: 10
+
+*** Hanna Ceres
+    
+- Documento :: [[./CeresHanna/tarea2_CeresHanna.pdf][tarea2_CeresHanna.pdf]]
+- Comentarios ::
+  - Buen resumen
+  - Ojo, ¡hay varios dedazos menores en tu texto! (p.ej. "FreeSBD",
+    "...que tine un usu de memoria"). Cuida esos detalles, no dan
+    buena impresión.
+- Calificación :: 10
+
+*** Hugo Juárez Pérez
+
+- Documento :: [[./JuarezPerezHugo/SwappingInFreeBSD.pdf][SwappingInFreeBSD.pdf]]
+- Comentarios ::
+  - Buen resumen
+  - Ojo: Si bien es completamente aceptable dividir un esquema muy
+    ancho en dos páginas, ¡evita cortar texto con esta división! Se
+    vuelve difícil seguir lo que escribes
+    - Más aún: el archivo es un PDF, pero no es para imprimir. ¿Para
+      qué darle dimensiones artificiales de una hoja carta? ☺
+- Calificación :: 10
